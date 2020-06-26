@@ -1,3 +1,4 @@
 source "https://rubygems.org"
-gem 'github-pages'
-gem 'jekyll-environment-variables'
+gemspec	
+gem "jekyll", "~> 3.8"
+gem "bundler", "~> 2.0.1"
