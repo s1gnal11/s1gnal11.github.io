@@ -37,6 +37,10 @@ a:hover {
 	text-decoration: none;
 }
 
+.text-gt {
+	color: #b3a26a !important;
+}
+
 .text-rblue {
 	color: #01d9fe !important;
 }
