@@ -3,34 +3,40 @@ body {
 	font-weight: 400;
 	font-size: 1rem;
 	color: darken(#ccc, 20%);
-	font-family: 'Roboto Mono', monospace;
+	font-family: "Roboto Mono", monospace;
 }
-::-moz-selection { 
+::-moz-selection {
 	background: $black;
 	color: $white;
 }
-::selection { 
+::selection {
 	background: $black;
 	color: $white;
 }
-h1, h2, h3, h4, h5, h6, .site-logo {
-	font-family: 'Oswald', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-logo {
+	font-family: "Oswald", sans-serif;
 }
 a {
-	transition: .3s all ease;
+	transition: 0.3s all ease;
 	&:hover {
 		text-decoration: none;
 	}
 }
 
 .text-black {
-	color: $black!important;
+	color: $black !important;
 }
 .bg-black {
-	background: $black!important;
+	background: $black !important;
 }
 .bg-dark {
-	background: #13171d!important;
+	background: #13171d !important;
 }
 
 .line-height-sm {
@@ -42,8 +48,8 @@ a {
 
 .site-wrap {
 	&:before {
-		transition: .3s all ease-in-out;
-		background: rgba(0,0,0,.6);
+		transition: 0.3s all ease-in-out;
+		background: rgba(0, 0, 0, 0.6);
 		content: "";
 		position: absolute;
 		z-index: 2000;
@@ -60,7 +66,7 @@ a {
 		width: 100%;
 		z-index: 2;
 		overflow: hidden;
-		
+
 		&:before {
 			opacity: 1;
 			visibility: visible;
@@ -71,9 +77,11 @@ a {
 .btn {
 	position: relative;
 	top: 0;
-	&:hover, &:active, &:focus {
+	&:hover,
+	&:active,
+	&:focus {
 		outline: none;
-		box-shadow: none!important;
+		box-shadow: none !important;
 	}
 	&.btn-secondary {
 		background-color: lighten($secondary, 45%);
@@ -81,21 +89,21 @@ a {
 		color: $black;
 	}
 	&.btn-sm {
-		font-size: $font-size-base - .1rem;
+		font-size: $font-size-base - 0.1rem;
 	}
 	&.btn-primary {
 		color: $white;
 	}
 	&.btn-outline-primary {
 		&:hover {
-			color: $white!important;
+			color: $white !important;
 		}
 	}
 	&.btn-black {
-		background: $black!important;
+		background: $black !important;
 		color: $white;
 		&:hover {
-			background: lighten($black, 20%)!important;
+			background: lighten($black, 20%) !important;
 		}
 	}
 	&.btn-white {
@@ -109,7 +117,6 @@ a {
 			}
 		}
 	}
-	
 }
 
 .bg-black {
@@ -117,18 +124,20 @@ a {
 }
 .form-control {
 	height: 47px;
-	&:active, &:focus {
+	&:active,
+	&:focus {
 		border-color: $primary;
 	}
-	&:hover, &:active, &:focus {
-		box-shadow: none!important;
+	&:hover,
+	&:active,
+	&:focus {
+		box-shadow: none !important;
 	}
 }
 
 .site-section {
 	padding: 3em 0;
 }
-
 
 .bg-text-line {
 	display: inline;
@@ -145,45 +154,54 @@ a {
 		background-position: top center;
 	}
 	&.fixed {
-		background-position: fixed!important;
+		background-position: fixed !important;
 	}
-	&.overlay, &.overlay-primary, &.overlay-info, &.overlay-success, &.overlay-warning {
+	&.overlay,
+	&.overlay-primary,
+	&.overlay-info,
+	&.overlay-success,
+	&.overlay-warning {
 		position: relative;
 		&:before {
 			content: "";
 			position: absolute;
-			top: 0; bottom: 0; right: 0; left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
 		}
 	}
 	&.overlay {
 		&:before {
-			background: rgba($black, .4);
+			background: rgba($black, 0.4);
 		}
 	}
 	&.overlay-primary {
 		&:before {
-			background: rgba($primary, .9);
+			background: rgba($primary, 0.9);
 		}
 	}
 	&.overlay-info {
 		&:before {
-			background: rgba($info, .9);
+			background: rgba($info, 0.9);
 		}
 	}
 	&.overlay-success {
 		&:before {
-			background: rgba($success, .9);
+			background: rgba($success, 0.9);
 		}
 	}
 	&.overlay-success {
 		&:before {
-			background: rgba($warning, .9);
+			background: rgba($warning, 0.9);
 		}
 	}
 }
-.display-3, .display-2, .display-4 {
+.display-3,
+.display-2,
+.display-4 {
 	@include media-breakpoint-down(sm) {
-		font-size: 2rem!important;
+		font-size: 2rem !important;
 	}
 }
 
@@ -199,31 +217,31 @@ a {
 }
 
 .text-gray-100 {
-	color: $gray-100!important;
+	color: $gray-100 !important;
 }
 .text-gray-200 {
-	color: $gray-200!important;
+	color: $gray-200 !important;
 }
 .text-gray-300 {
-	color: $gray-300!important;
+	color: $gray-300 !important;
 }
 .text-gray-400 {
-	color: $gray-400!important;
+	color: $gray-400 !important;
 }
 .text-gray-500 {
-	color: $gray-500!important;
+	color: $gray-500 !important;
 }
 .text-gray-600 {
-	color: $gray-600!important;
+	color: $gray-600 !important;
 }
 .text-gray-700 {
-	color: $gray-700!important;
+	color: $gray-700 !important;
 }
 .text-gray-800 {
-	color: $gray-800!important;
+	color: $gray-800 !important;
 }
 .text-gray-900 {
-	color: $gray-900!important;
+	color: $gray-900 !important;
 }
 
 .row-wrap {
@@ -243,7 +261,7 @@ a {
 }
 .responsive-md-height {
 	@include media-breakpoint-down(md) {
-		height: 500px!important;
+		height: 500px !important;
 		margin-bottom: 15px;
 	}
 }
@@ -254,15 +272,18 @@ a {
 		padding: 7em 0;
 	}
 	p {
-		color: lighten($black, 45%); 
+		color: lighten($black, 45%);
 	}
-	h2,h3,h4,h5 {
+	h2,
+	h3,
+	h4,
+	h5 {
 		color: $white;
 	}
 	a {
-		color: lighten($black, 60%); 
+		color: lighten($black, 60%);
 		&:hover {
-			color: lighten($black, 100%); 
+			color: lighten($black, 100%);
 		}
 	}
 	ul {
@@ -273,10 +294,10 @@ a {
 	.footer-heading {
 		font-size: 1.3rem;
 		text-transform: uppercase;
-		letter-spacing: .1em;
+		letter-spacing: 0.1em;
 		color: $white;
 		position: relative;
-		
+
 		// border-bottom: 2px solid $primary;
 		padding-bottom: 15px;
 		&:before {

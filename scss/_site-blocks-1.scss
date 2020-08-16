@@ -17,8 +17,6 @@
 	}
 }
 
-
-
 .hero-wrap {
 	background-position: top center;
 	height: 70vh;
@@ -31,7 +29,8 @@
 		max-width: 600px;
 		background: $white;
 		padding: 50px;
-		&:before, &:after {
+		&:before,
+		&:after {
 			position: absolute;
 			content: "";
 			background: $primary;
@@ -40,11 +39,11 @@
 		}
 		&:before {
 			width: 20px;
-			height: 50px; 
+			height: 50px;
 		}
 		&:after {
 			height: 20px;
-			width: 50px; 
+			width: 50px;
 			background: $yellow;
 		}
 		p {
@@ -60,7 +59,8 @@
 			// width: 800px!important;
 			width: 90%;
 			// right: 20px;
-			&:before, &:after {
+			&:before,
+			&:after {
 				display: none;
 			}
 		}
@@ -93,7 +93,6 @@
 		overflow: hidden;
 		img {
 			max-height: 100%;
-
 		}
 	}
 }
@@ -102,7 +101,8 @@
 	position: relative;
 	padding-left: 20px;
 	margin-bottom: 40px;
-	&:before, &:after {
+	&:before,
+	&:after {
 		position: absolute;
 		content: "";
 		background: $primary;
@@ -111,11 +111,11 @@
 	}
 	&:before {
 		width: 5px;
-		height: 15px; 
+		height: 15px;
 	}
 	&:after {
 		height: 5px;
-		width: 15px; 
+		width: 15px;
 		background: $yellow;
 	}
 }
@@ -123,7 +123,7 @@
 .player {
 	p {
 		color: darken(#cccccc, 10%);
-	}	
+	}
 }
 
 .owl-4-slider {
@@ -161,11 +161,11 @@
 		margin-bottom: 20px;
 	}
 	p {
-		color: rgba($white, .5);
+		color: rgba($white, 0.5);
 	}
 
 	.links {
-		li{
+		li {
 			margin-bottom: 15px;
 			a {
 				color: $white;
@@ -186,7 +186,6 @@
 		a {
 			color: $white;
 			> span {
-
 			}
 		}
 	}
@@ -204,7 +203,8 @@
 	span {
 		background: #efefef;
 	}
-	a, span {
+	a,
+	span {
 		border-radius: 50%;
 		width: 30px;
 		height: 30px;
@@ -218,7 +218,7 @@ figure {
 		margin-bottom: 10px;
 	}
 	figcaption {
-		font-size: .8rem;
+		font-size: 0.8rem;
 		font-style: italic;
 	}
 }
@@ -261,7 +261,7 @@ figure {
 			.meta {
 				text-transform: uppercase;
 				font-size: 13px;
-				letter-spacing: .1em;
+				letter-spacing: 0.1em;
 				color: #ccc;
 			}
 			.reply {
