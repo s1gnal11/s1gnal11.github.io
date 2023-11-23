@@ -6,6 +6,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 github_username: "jahzielv"
+phone_number: 4044287664
+favicon: "/img/favicon-96x96.png"
 
 # Build settings
 markdown: kramdown
